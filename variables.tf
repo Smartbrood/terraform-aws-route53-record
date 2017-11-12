@@ -2,6 +2,10 @@ variable "domain" {
   description = "Domain zone name"
 }
 
+variable "name" {
+  description = "Resource record name"
+}
+
 variable "private_zone" {
   description = "Set true for private zone"
   default = "false"

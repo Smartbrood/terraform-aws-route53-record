@@ -12,7 +12,8 @@ variable "private_zone" {
 }
 
 variable "ip" {
-  description = "String with ip addresses, separated by comma"
+  type = "list"
+  description = "List with ip addresses"
 }
 
 variable "type" {

@@ -8,5 +8,5 @@ resource "aws_route53_record" "this" {
   name    = "${var.name}"
   type    = "${var.type}"
   ttl     = "${var.ttl}"
-  records = "${split(",", var.ip)}"
+  records = "${var.ip}"
 }
